@@ -12,12 +12,14 @@ function App() {
     <div className="App">
       <BrowserRouter>
       <Sidebar/>
-      <Routes>
-        <Route path='/Home' element={<Home />} />
-        <Route path='/Cryptocurrencies' element={<Cryptocurrencies />} />
-        <Route path='/Exchange' element={<Exchanges />} />
-        <Route path='/News' element={<News />} />
-      </Routes>
+      <div style={{marginLeft:"20%"}}>
+        <Routes>
+          <Route path='/Home' element={<Home />} />
+          <Route path='/Cryptocurrencies' element={<Cryptocurrencies />} />
+          <Route path='/Exchange' element={<Exchanges />} />
+          <Route path='/News' element={<News />} />
+        </Routes>
+        </div>
       </BrowserRouter>
     </div>
   );
