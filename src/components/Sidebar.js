@@ -37,7 +37,9 @@ function Sidebar(props) {
             <ListItemIcon>
               {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
             </ListItemIcon>
-            <Link to={`/${text}`}><ListItemText primary={text} /></Link>
+            <Link to={{pathname:`/${text}`, state:{
+              hello: 'hello world'
+            } }}><ListItemText primary={text} /></Link>
           </ListItem>
         ))}
       </List>
