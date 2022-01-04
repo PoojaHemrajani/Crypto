@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Sidebar from './components/Sidebar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -12,7 +11,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
       <Sidebar/>
-      <div style={{marginLeft:"20%"}}>
+      <div style={{marginLeft:'300px'}}>
         <Routes>
           <Route path='/Home' element={<Home />} />
           <Route path='/Cryptocurrencies' element={<Cryptocurrencies />} />
